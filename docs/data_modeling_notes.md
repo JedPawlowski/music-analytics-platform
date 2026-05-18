@@ -1,12 +1,10 @@
-# Expected Entities
+# Entities
 
 - Track
 - Artist
-- Album
 - Listening Event
-- Platform
-- Time
-- Session
+- End Time
+- Time Played
 
 # Relationships
 
@@ -18,4 +16,4 @@
 # Expected Grain
 
 One row in listening history represents:
-One track play event at a specific timestamp.
+One track play event ending at a specific timestamp.
