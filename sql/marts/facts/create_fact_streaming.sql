@@ -1,8 +1,12 @@
+DROP TABLE IF EXISTS marts.fact_streaming;
+
 CREATE TABLE marts.fact_streaming AS
 
 SELECT
 
     ROW_NUMBER() OVER (ORDER BY sh.end_time) AS streaming_event_id,
+
+    dd.date_id,
 
     da.artist_id,
 
@@ -21,6 +25,9 @@ SELECT
     sh.ingestion_ts
 
 FROM staging.streaming_history_clean sh
+
+LEFT JOIN marts.dim_date dd
+    ON sh.play_date = dd.date_id
 
 LEFT JOIN marts.dim_artist da
     ON sh.artist_name = da.artist_name

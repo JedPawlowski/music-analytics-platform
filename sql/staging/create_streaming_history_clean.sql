@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS staging.streaming_history_clean;
+
 CREATE TABLE staging.streaming_history_clean AS
 
 SELECT 

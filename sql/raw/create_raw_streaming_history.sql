@@ -1,4 +1,4 @@
-CREATE TABLE raw.streaming_history (
+CREATE TABLE IF NOT EXISTS raw.streaming_history (
     end_time TIMESTAMP,
     artist_name TEXT,
     track_name TEXT,
