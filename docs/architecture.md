@@ -13,13 +13,11 @@ staging.streaming_history_clean
 │
 ▼
 marts.fact_streaming
-/         
-/           
-▼             ▼
+│
+▼           
 marts.dim_artist  marts.dim_track
-\           /
-\         /
-▼       ▼
+│
+▼
 analytics.session_metrics
 │
 ▼
