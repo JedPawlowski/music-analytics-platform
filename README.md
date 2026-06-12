@@ -13,7 +13,7 @@ The platform ingests raw Spotify JSON files, loads them into PostgreSQL using a 
 * SQL
 * DBeaver
 * Git & GitHub
-* Power BI
+* Power BI (planned for Version 2)
 
 ## Architecture
 
@@ -74,6 +74,20 @@ music-analytics-platform/
 ├── README.md
 
 └── LICENSE
+
+## Data Model
+
+![Data Model](images/data_model.png)
+
+## Project Scale
+
+* 43,049 Spotify streaming records
+* 5 source JSON files
+* 3 warehouse layers
+* 1 fact table
+* 2 dimension tables
+* 7 data quality tests
+* Incremental ingestion with audit logging
 
 ## Key Learnings
 
