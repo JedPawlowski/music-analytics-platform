@@ -33,6 +33,7 @@ SELECT
     session_id,
 
     MIN(end_time) AS session_start_time,
+    EXTRACT(HOUR FROM MIN(end_time)) AS session_start_hour,
     MAX(end_time) AS session_end_time,
 
     COUNT(*) AS tracks_played,
