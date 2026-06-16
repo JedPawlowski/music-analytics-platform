@@ -13,11 +13,70 @@ The platform ingests raw Spotify JSON files, loads them into PostgreSQL using a 
 * SQL
 * DBeaver
 * Git & GitHub
-* Power BI (planned for Version 2)
+* Power BI
 
 ## Architecture
 
 ![Architecture Diagram](images/architecture.png)
+
+## Dashboard
+
+The project includes an interactive Power BI dashboard built on top of the analytics layer.
+
+### Pages
+
+#### Listening Overview
+
+Provides high-level listening metrics, including:
+
+* Total tracks streamed
+* Total artists
+* Total listening time
+* Top artists by listening time
+* Top tracks by listening time
+
+#### Session Analytics
+
+Analyzes listening sessions created using SQL sessionization logic:
+
+* Total sessions
+* Average and median session length
+* Session length distribution
+* Peak listening hour
+* Session start time analysis
+
+#### Listening Trends
+
+Tracks listening behavior over time:
+
+* Monthly listening trend
+* Most active month
+* Average monthly listening time
+* Listening activity by day of week
+
+#### Artist Deep Dive
+
+Explores artist preferences and discovery patterns:
+
+* Top artist and listening share
+* Top 10 artist concentration
+* Artist listening trends
+* Artist discovery trends
+* Artist listening share treemap
+
+## Dashboard Screenshots
+
+### Listening Overview
+![Listening Overview](images/listening_overview.png)
+
+### Session Analytics
+![Session Analytics](images/session_analytics.png)
+
+### Listening Trends
+![Listening Trends](images/listening_trends.png)
+
+### Artist Deep Dive
+![Artist Deep Dive](images/artist_deep_dive.png)
 
 ## Features
 
@@ -48,6 +107,14 @@ The platform ingests raw Spotify JSON files, loads them into PostgreSQL using a 
 * Success/Failure tracking
 * Error message capture
 * Per-file processing statistics
+
+### Power BI
+
+* Multi-page dashboard
+* Interactive date filtering
+* KPI-driven reporting
+* Navigation buttons
+* Artist and session analytics
 
 ## Project Structure
 
